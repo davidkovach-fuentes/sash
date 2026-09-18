@@ -1,6 +1,5 @@
 name: Create and publish a Docker image
 
-# workflow_dispatch or version tags (v*). Builds the `sys` target for amd64 and arm64.
 on:
   workflow_dispatch:
   push:
