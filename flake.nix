@@ -69,6 +69,7 @@
                       autoconf
                       automake
                       libtool
+                      python312Packages.setuptools
                     ]);
 
                   env = (old.env or {}) // {
@@ -113,4 +114,3 @@
     );
   };
 }
- 

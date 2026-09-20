@@ -32,5 +32,8 @@ dev = [
     "matplotlib_set_diagrams",
 ]
 
+[tool.uv]
+package = true
+
 [tool.uv.extra-build-dependencies]
 shasta = ["setuptools"]
