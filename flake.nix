@@ -63,18 +63,24 @@
                 libdash = prev.libdash.overrideAttrs (old: {
                   nativeBuildInputs =
                     (old.nativeBuildInputs or [])
+                    ++ final.resolveBuildSystem {setuptools = [];}
                     ++ (with pkgs; [
-                      gcc
                       gnumake
                       autoconf
                       automake
                       libtool
-                      python312Packages.setuptools
                     ]);
 
                   env = (old.env or {}) // {
                     CFLAGS = "-std=gnu17";
                   };
+                });
+
+                # pyproject.toml already declares shasta needs setuptools
+                shasta = prev.shasta.overrideAttrs (old: {
+                  nativeBuildInputs =
+                    (old.nativeBuildInputs or [])
+                    ++ final.resolveBuildSystem {setuptools = [];};
                 });
               })
             ]
