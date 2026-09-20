@@ -10,13 +10,12 @@ requires-python = ">=3.10"
 dependencies = [
     "z3-solver>=4.14.1.0",
     "pash-annotations>=0.2.4",
-    "libdash>=0.4.1",
-    "shasta @ git+https://github.com/binpash/shasta"
+    "libdash>=0.5.0",
+    "shasta @ git+https://github.com/binpash/shasta",
 ]
 
 [project.scripts]
-sash = "sash:main.cli_main"
-sash-llm = "sash.llm_main:cli_main"
+sash = "sash.main:cli_main"
 
 [build-system]
 requires = ["uv_build>=0.8.15,<0.9.0"]

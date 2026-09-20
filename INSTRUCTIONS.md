@@ -24,7 +24,7 @@ This artifact targets the following badges:
 
 Reviewers should confirm the following:
 
-1. **Repository**: The artifact is available at [https://github.com/atlas-brown/sash](https://github.com/atlas-brown/sash) (branch `sosp26-ae` will be frozen) and archived at [Zenodo](https://zenodo.org/records/21288698) (DOI: 10.5281/zenodo.21288698).
+1. **Repository**: The artifact is available at [https://github.com/atlas-brown/sash](https://github.com/atlas-brown/sash) (branch `sosp26-ae` will be frozen) and archived at [Zenodo](https://doi.org/10.5281/zenodo.21288697) (DOI: 10.5281/zenodo.21288697).
 2. **License**: The artifact contains an MIT license ([LICENSE](./LICENSE)), allowing comparison and extension.
 3. **Documentation**: The top-level [INSTRUCTIONS.md](INSTRUCTIONS.md) and [README.md](README.md) go over all artifact contents, its mapping to the paper's contributions, and instructions for its installation and exercise.
 
@@ -121,6 +121,7 @@ The evaluation from now on focuses on the specific bug that was fixed in each sc
 
 The ground truth, which includes the source of the script as well as information about ShellCheck's output on it can be found in: [`benchmarks/bugs_and_variants/sf-access_del_resource/info.yaml`](benchmarks/bugs_and_variants/sf-access_del_resource/info.yaml).
 
+Note: Optionally, use `./scripts/shellcheck_eval.py` to verify that ShellCheck's output matches the ground truth.
 
 # Results Reproduced (key results 40 min; all results 8 hr 40 min)
 
