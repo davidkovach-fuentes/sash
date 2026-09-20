@@ -31,3 +31,6 @@ dev = [
     "matplotlib",
     "matplotlib_set_diagrams",
 ]
+
+[tool.uv.extra-build-dependencies]
+shasta = ["setuptools"]
