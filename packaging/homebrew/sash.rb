@@ -1,8 +1,8 @@
 class Sash < Formula
   desc "Static analysis for the Unix shell (runs via Docker)"
   homepage "https://github.com/atlas-brown/sash"
-  url "https://github.com/atals-brown/sash/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "todo: curl -sl 'https://github.com/atlas-brown/sash/archive/refs/tags/v0.1.1.tar.gz' | sha256sum'"
+  url "https://github.com/atlas-brown/sash/archive/refs/tags/v0.1.2.tar.gz"
+  # sha256 "todo: curl -sl 'https://github.com/atlas-brown/sash/archive/refs/tags/v0.1.1.tar.gz' | sha256sum'"
   license "MIT"
   head "https://github.com/atlas-brown/sash.git", branch: "master"
 
@@ -30,7 +30,6 @@ class Sash < Formula
       Install Docker: https://docs.docker.com/get-docker/
       Or with Homebrew: brew install --cask docker
 
-      Override the image with the SASH_IMAGE environment variable.
     EOS
   end
 
