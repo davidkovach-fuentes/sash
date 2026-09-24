@@ -23,6 +23,21 @@ builds:
 checksum:
   name_template: checksums.txt
 
+nfpms:
+  - id: packages
+    package_name: sash
+    vendor: Brown University
+    homepage: https://github.com/atlas-brown/sash
+    maintainer: John Brown <john_brown@brown.edu>
+    description: A static analysis tool for the shell based on symbolic execution
+    license: MIT
+
+    formats:
+      - deb
+      - rpm
+
+    meta: true
+
 changelog:
   sort: asc
   filters:
